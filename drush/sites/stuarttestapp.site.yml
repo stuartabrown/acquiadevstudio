@@ -1,0 +1,37 @@
+dev:
+  root: /var/www/html/stuarttestapp.dev/docroot
+  ac-site: stuarttestapp
+  ac-env: dev
+  ac-realm: devcloud
+  uri: stuarttestappn4x3b8thup.devcloud.acquia-sites.com
+  dev.livedev:
+    parent: '@stuarttestapp.dev'
+    root: /mnt/gfs/stuarttestapp.dev/livedev/docroot
+  host: stuarttestappn4x3b8thup.ssh.devcloud.acquia-sites.com
+  user: stuarttestapp.dev
+  paths:
+    drush-script: drush9
+test:
+  root: /var/www/html/stuarttestapp.test/docroot
+  ac-site: stuarttestapp
+  ac-env: test
+  ac-realm: devcloud
+  uri: stuarttestapp3pgphzrit8.devcloud.acquia-sites.com
+  test.livedev:
+    parent: '@stuarttestapp.test'
+    root: /mnt/gfs/stuarttestapp.test/livedev/docroot
+  host: stuarttestapp3pgphzrit8.ssh.devcloud.acquia-sites.com
+  user: stuarttestapp.test
+  paths:
+    drush-script: drush9
+local:
+  docker:
+    service: appserver
+    exec:
+      options: >-
+        --user www-data -e COLUMNS=${DRUSH_COLUMNS} -e
+        DRUSH_PATHS_ALIAS_PATH=/app/drush/sites
+  uri: stuarttestapp.lndo.site
+  root: /app/docroot
+  paths:
+    drush-script: /app/vendor/drush/drush/drush

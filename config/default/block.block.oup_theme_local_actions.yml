@@ -1,0 +1,20 @@
+uuid: 24130d61-5a99-4ece-9f71-b6dea4af2ff4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oup_theme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: oup_theme_local_actions
+theme: oup_theme
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 8531668d-3bb6-49f3-9d7c-42d4105478df
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oup_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: oup_theme_branding
+theme: oup_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

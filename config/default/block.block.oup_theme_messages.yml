@@ -1,0 +1,22 @@
+uuid: b8108fec-0955-4faf-bfda-95d544b9ff70
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oup_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: oup_theme_messages
+theme: oup_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
